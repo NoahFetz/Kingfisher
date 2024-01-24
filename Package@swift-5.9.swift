@@ -4,10 +4,10 @@ import PackageDescription
 let package = Package(
     name: "Kingfisher",
     platforms: [
-        .iOS(.v12),
-        .macOS(.v10_14),
-        .tvOS(.v12),
-        .watchOS(.v5),
+        .iOS(.v16),
+        .macOS(.v13),
+        .tvOS(.v16),
+        .watchOS(.v9),
         .visionOS(.v1)
     ],
     products: [
@@ -16,8 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "Kingfisher",
-            path: "Sources",
-            resources: [.copy("PrivacyInfo.xcprivacy")]
+            path: "Sources"
         )
     ]
 )
